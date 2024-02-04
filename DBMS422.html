@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: url("ph4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding:30px 30px;
+} 
+
+
+button {
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   background-color :	#33CCCC;
+}
+
+.button:hover {background-color: #66FFCC}
+
+.button:active {
+  background-color: #66FFCC;
+  box-shadow: lightgreen;
+  transform: translateY(4px);
+}
+</style>
+</head>
+
+
+<body>
+<div class="center">
+<center>
+<h1>MANIPULATE MEDICINE </h1>
+<h2>Type only one box</h2>
+<h2>Type letter M in medicine to see all medicines</h2>
+<h2>for ban type first three letters in medicine id and for expiry and update quantity type 5 letters medicine mid</h2>
+<form action="php_manipulate_medicine.php" method="POST">
+<label for="mid"><b>MEDICINE ID:</b></label><input type="text" id="mid" name="mid"><br><br>
+<label for="mname"><b>MEDICINE NAME:</b></label><input type="text" id="mname" name="name"><br><br>
+<label for="mty"><b>MEDICINE TYPE:</b></label><input type="text" id="mty" name="mty"><br><br>
+<label for="mcom"><b>MEDICINE COMPANY:</b></label><input type="text" id="mcom" name="mcom"><br><br>
+<button type ="submit" name="login">SUBMIT</button><br><br>
+</form>
+<a href="DBMS42.html"><button>BACK</button></a>
+</center>
+</div>
+</body>
+</html>

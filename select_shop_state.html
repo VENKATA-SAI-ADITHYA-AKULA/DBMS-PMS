@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url("Ph10.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+button {
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   background-color :	#0086b3;
+}
+
+select
+{
+    padding:10px 40px;
+}
+
+button:hover {background-color: #003366}
+
+button:active {
+  background-color: #003366;
+  box-shadow: lightgreen;
+  transform: translateY(4px);
+}
+
+
+</style>
+</head>
+
+
+<center>
+<body>
+<h1>SELECT SHOP STATE</h1>
+<h1>Search for the medicine and buy from our nearest store</h1>
+<form action="select_branch.php" method="post">
+<select id="loc" name="loc">
+  <option value=""></option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Banglore">Banglore</option>
+  
+</select><br><br>
+<button type="submit" name="submit" class="btn btn-default">SUBMIT</button><br><br>
+</form>
+<a href="php_shop_management.html"><button>BACK</button></a><br>
+
+
+</body>
+
+
+</center>
+</html>
